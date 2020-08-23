@@ -1,0 +1,1 @@
+# corona_report_scraper
