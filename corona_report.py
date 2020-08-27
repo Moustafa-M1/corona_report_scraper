@@ -19,7 +19,7 @@ def corona():
     target = out.index(country)
     world = out.index("world")
     report = {country: [], "world": [out[world+2], out[world+4]]}
-    
+
     for index, value in enumerate(out):
         if target < index < target + 11:
             report[country].append(value)
@@ -41,9 +41,8 @@ def corona():
           " Total recovered: {:<15}\n"
           " Active cases:    {:<15}\n"
           " Critical cases:  {:<15}\n".format(report[country][0], report[country][1], report[country][2],
-                                            report[country][3],
-                                            report[country][4], 
-report[country][6], report[country][7]))
+                                            report[country][3], report[country][4],
+                                            report[country][6], report[country][7]))
     print("     {:*^50}     ".format("Around world cases"))
     print(" Total cases:     {:<15} New cases:  {}\n"
           " Total deaths:    {:<15} New deaths: {}\n"
